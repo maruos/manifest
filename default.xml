@@ -5,21 +5,22 @@
            fetch="https://android.googlesource.com" />
 
   <remote  name="github"
-           fetch="https://github.com" />
+           fetch="https://github.com"
+           revision="refs/tags/v0.2.4" />
 
   <default revision="refs/tags/android-5.1.1_r14"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
 
-  <project path="build" name="maruos/android_platform_build" groups="pdk,tradefed" remote="github" revision="android-5.1" >
+  <project path="build" name="maruos/android_platform_build" groups="pdk,tradefed" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="vendor/maruos" name="maruos/vendor_maruos" remote="github" revision="master" />
-  <project path="vendor/maruos/mflinger" name="maruos/mflinger" remote="github" revision="master" />
-  <project path="vendor/maruos/blueprints" name="maruos/blueprints" remote="github" revision="master" />
-  <project path="vendor/maruos/installer" name="maruos/installer" remote="github" revision="master" />
+  <project path="vendor/maruos" name="maruos/vendor_maruos" remote="github" />
+  <project path="vendor/maruos/mflinger" name="maruos/mflinger" remote="github" />
+  <project path="vendor/maruos/blueprints" name="maruos/blueprints" remote="github" />
+  <project path="vendor/maruos/installer" name="maruos/installer" remote="github" />
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
@@ -50,8 +51,8 @@
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/google/atv" name="device/google/atv" groups="device,fugu" />
-  <project path="device/lge/hammerhead" name="maruos/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="master" />
-  <project path="device/lge/hammerhead-kernel" name="maruos/device_lge_hammerhead-kernel" groups="device,hammerhead" remote="github" revision="master" clone-depth="1" />
+  <project path="device/lge/hammerhead" name="maruos/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" />
+  <project path="device/lge/hammerhead-kernel" name="maruos/device_lge_hammerhead-kernel" groups="device,hammerhead" remote="github" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="docs/source.android.com" name="platform/docs/source.android.com" groups="pdk-cw-fs" />
   <project path="external/aac" name="platform/external/aac" groups="pdk" />
@@ -204,7 +205,7 @@
   <project path="external/llvm" name="platform/external/llvm" groups="pdk" />
   <project path="external/lohit-fonts" name="platform/external/lohit-fonts" />
   <project path="external/ltrace" name="platform/external/ltrace" groups="pdk-cw-fs" />
-  <project path="external/lxc" name="maruos/platform_external_lxc" remote="github" revision="master" />
+  <project path="external/lxc" name="maruos/platform_external_lxc" remote="github" />
   <project path="external/lzma" name="platform/external/lzma" groups="pdk" />
   <project path="external/markdown" name="platform/external/markdown" groups="pdk-cw-fs" />
   <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="pdk" />
@@ -281,7 +282,7 @@
   <project path="external/zopfli" name="platform/external/zopfli" groups="pdk-cw-fs" />
   <project path="external/zxing" name="platform/external/zxing" groups="pdk-cw-fs" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="maruos/android_platform_frameworks_base" groups="pdk-cw-fs" remote="github" revision="master" />
+  <project path="frameworks/base" name="maruos/android_platform_frameworks_base" groups="pdk-cw-fs" remote="github" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -290,7 +291,7 @@
   <project path="frameworks/minikin" name="platform/frameworks/minikin" groups="pdk-cw-fs" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk-cw-fs" />
   <project path="frameworks/multidex" name="platform/frameworks/multidex" groups="pdk-cw-fs" />
-  <project path="frameworks/native" name="maruos/android_platform_frameworks_native" groups="pdk" remote="github" revision="master" />
+  <project path="frameworks/native" name="maruos/android_platform_frameworks_native" groups="pdk" remote="github" />
   <project path="frameworks/opt/bitmap" name="platform/frameworks/opt/bitmap" />
   <project path="frameworks/opt/bluetooth" name="platform/frameworks/opt/bluetooth" groups="pdk-cw-fs" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" groups="pdk-cw-fs" />
@@ -396,7 +397,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="maruos/android_platform_packages_apps_Settings" remote="github" revision="master" />
+  <project path="packages/apps/Settings" name="maruos/android_platform_packages_apps_Settings" remote="github" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -435,7 +436,7 @@
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" clone-depth="1" />
-  <project path="prebuilts/busybox" name="maruos/platform_prebuilts_busybox" remote="github" revision="master" />
+  <project path="prebuilts/busybox" name="maruos/platform_prebuilts_busybox" remote="github" />
   <!-- <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/arm/3.3" name="platform/prebuilts/clang/darwin-x86/arm/3.3" groups="arm,darwin,pdk-cw-fs" />
