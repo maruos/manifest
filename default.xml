@@ -6,14 +6,14 @@
 
   <remote  name="github"
            fetch="https://github.com"
-           revision="master" />
+           revision="refs/tags/v0.3" />
 
   <default revision="refs/tags/android-6.0.1_r17"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
 
-  <project path="build" name="maruos/android_platform_build" groups="pdk,tradefed" remote="github" revision="android-6.0" >
+  <project path="build" name="maruos/android_platform_build" groups="pdk,tradefed" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -21,6 +21,7 @@
   <project path="vendor/maruos/mflinger" name="maruos/mflinger" remote="github" />
   <project path="vendor/maruos/blueprints" name="maruos/blueprints" remote="github" />
   <project path="vendor/maruos/installer" name="maruos/installer" remote="github" />
+  <project path="vendor/maruos/kernel/msm" name="maruos/android_kernel_msm" remote="github" revision="refs/tags/hammerhead-v0.3" clone-depth="1"/>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
