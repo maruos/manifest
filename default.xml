@@ -8,16 +8,12 @@
            fetch="https://github.com"
            revision="master" />
 
-  <remote  name="origin"
-           fetch="https://github.com"
-           revision="master" />
-
   <default revision="refs/tags/android-6.0.1_r72"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
 
-  <project path="build" name="TMartinPPC/maru_platform_build" groups="pdk,tradefed" remote="origin" revision="refs/tags/v0.3" >
+  <project path="build" name="TMartinPPC/maru_platform_build" groups="pdk,tradefed" remote="github" revision="refs/tags/v0.3" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
@@ -26,7 +22,7 @@
   <project path="vendor/maruos/blueprints" name="maruos/blueprints" remote="github" />
   <project path="vendor/maruos/installer" name="maruos/installer" remote="github" />
   <project path="vendor/maruos/kernel/msm" name="maruos/android_kernel_msm" remote="github" revision="refs/tags/hammerhead-v0.3" clone-depth="1"/>
-  <project path="kernel/flo" name="TMartinPPC/maru_kernel_flo" remote="origin" clone-depth="1"/>
+  <project path="kernel/flo" name="TMartinPPC/maru_kernel_flo" remote="github" clone-depth="1"/>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
@@ -39,9 +35,9 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" groups="pdk-cw-fs,pdk-fs" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="TMartinPPC/maru_device_asus_flo" remote="origin" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="TMartinPPC/maru_device_asus_flo-kernel" remote="origin" groups="device,flo" clone-depth="1" />
+  <project path="device/asus/deb" name="TMartinPPC/maru_device_asus_deb" remote="github" groups="device,flo" />
+  <project path="device/asus/flo" name="TMartinPPC/maru_device_asus_flo" remote="github" groups="device,flo" />
+  <project path="device/asus/flo-kernel" name="TMartinPPC/maru_device_asus_flo-kernel" remote="github" groups="device,flo" clone-depth="1" />
   <project path="device/asus/fugu" name="device/asus/fugu" groups="device,fugu,broadcom_pdk" />
   <project path="device/asus/fugu-kernel" name="device/asus/fugu-kernel" groups="device,fugu,broadcom_pdk" clone-depth="1" />
   <project path="device/common" name="device/common" groups="pdk-cw-fs,pdk-fs" />
