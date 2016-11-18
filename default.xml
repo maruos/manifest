@@ -6,13 +6,13 @@
 
   <remote  name="github"
            fetch="https://github.com"
-           revision="refs/tags/v0.3" />
+           revision="master" />
 
   <remote  name="origin"
            fetch="https://github.com"
            revision="master" />
 
-  <default revision="refs/tags/android-6.0.1_r17"
+  <default revision="refs/tags/android-6.0.1_r72"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
@@ -21,12 +21,12 @@
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="vendor/maruos" name="TMartinPPC/vendor_maru" remote="origin" />
+  <project path="vendor/maruos" name="maruos/vendor_maruos" remote="github" />
   <project path="vendor/maruos/mflinger" name="maruos/mflinger" remote="github" />
   <project path="vendor/maruos/blueprints" name="maruos/blueprints" remote="github" />
   <project path="vendor/maruos/installer" name="maruos/installer" remote="github" />
   <project path="vendor/maruos/kernel/msm" name="maruos/android_kernel_msm" remote="github" revision="refs/tags/hammerhead-v0.3" clone-depth="1"/>
-  <project path="vendor/maruos/kernel/flo" name="TMartinPPC/maru_kernel_flo" remote="origin" clone-depth="1"/>
+  <project path="kernel/flo" name="TMartinPPC/maru_kernel_flo" remote="origin" clone-depth="1"/>
 
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
@@ -381,7 +381,6 @@
   <project path="packages/apps/Dialer" name="platform/packages/apps/Dialer" groups="pdk-fs" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" groups="pdk-fs" />
   <project path="packages/apps/ExactCalculator" name="platform/packages/apps/ExactCalculator" groups="pdk-fs" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" groups="pdk-fs" />
   <project path="packages/apps/FMRadio" name="platform/packages/apps/FMRadio" groups="pdk-fs" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" groups="pdk-fs" />
