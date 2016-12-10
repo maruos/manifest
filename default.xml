@@ -8,7 +8,7 @@
            fetch="https://github.com"
            revision="master" />
 
-  <default revision="refs/tags/android-6.0.1_r72"
+  <default revision="refs/tags/android-6.0.1_r77"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
