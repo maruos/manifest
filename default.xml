@@ -11,12 +11,12 @@
   <remote  name="github"
            fetch="https://github.com"/>
 
-  <default revision="refs/tags/android-6.0.1_r77"
+  <default revision="refs/tags/android-6.0.1_r78"
            remote="aosp"
            sync-c="true"
            sync-j="1" />
 
-  <project path="build" name="android_platform_build" groups="pdk,tradefed" remote="maruos" revision="android-6.0" >
+  <project path="build" name="android_platform_build" groups="pdk,tradefed" remote="maruos" revision="marshmallow-mr2-release" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
