@@ -25,6 +25,8 @@
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" />
 
+  <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" revision="hammerhead-3.4-marshmallow-mr3" clone-depth="1"/>
+
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
@@ -65,7 +67,6 @@
   <project path="device/huawei/angler" name="device/huawei/angler" groups="device,angler,broadcom_pdk" />
   <project path="device/huawei/angler-kernel" name="device/huawei/angler-kernel" groups="device,angler,broadcom_pdk" />
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos"/>
-  <project path="device/lge/hammerhead-kernel" name="device_lge_hammerhead-kernel" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" clone-depth="1" />
   <project path="device/moto/shamu" name="device/moto/shamu" groups="device,shamu,broadcom_pdk" />
   <project path="device/moto/shamu-kernel" name="device/moto/shamu-kernel" groups="device,shamu,broadcom_pdk" clone-depth="1" />
   <project path="device/sample" name="device/sample" groups="pdk" />
