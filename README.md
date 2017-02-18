@@ -1,4 +1,4 @@
-# Maru OS Manifest for Nexus 7 (flo)
+# Maru OS Manifest
 
 Getting Started
 ---------------
@@ -8,7 +8,7 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 
 To initialize your local repository using the Maru OS trees, use a command like this:
 
-    repo init -u git://github.com/TMartinPPC/maru_manifest.git -b master
+    repo init -u git://github.com/maruos/manifest.git -b master
 
 Then to sync up:
 
