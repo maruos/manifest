@@ -6,7 +6,7 @@
 
   <remote  name="maruos"
            fetch="https://github.com/maruos"
-           revision="refs/tags/v0.4" />
+           revision="refs/tags/v0.4.1" />
 
   <remote  name="github"
            fetch="https://github.com"/>
