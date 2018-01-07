@@ -2,11 +2,12 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com" />
-  <default revision="refs/tags/android-7.1.2_r28"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-7.1.2_r32"
            remote="aosp"
            sync-c="true"
-           sync-j="1" />
+           sync-j="2" />
 
   <project path="build" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />

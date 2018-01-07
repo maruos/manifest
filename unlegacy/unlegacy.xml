@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Unlegacy Android vendor project  -->
+  <project path="vendor/unlegacy" name="Unlegacy-Android/android_vendor_unlegacy" remote="unlegacy" />
+
+  <!-- Replace build project to build kernel inline from the source -->
+  <remove-project name="platform/build" />
+  <project path="build" name="Unlegacy-Android/android_build" remote="unlegacy" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="Unlegacy-Android/android_bionic" remote="unlegacy" groups="pdk" />
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="Unlegacy-Android/android_frameworks_av" remote="unlegacy" groups="pdk" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="Unlegacy-Android/android_frameworks_base" remote="unlegacy" groups="pdk" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="Unlegacy-Android/android_frameworks_native" remote="unlegacy" groups="pdk" />
+  <remove-project name="platform/hardware/broadcom/wlan" />
+  <project path="hardware/broadcom/wlan" name="Unlegacy-Android/android_hardware_broadcom_wlan" remote="unlegacy" groups="pdk,broadcom_wlan" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="Unlegacy-Android/android_system_sepolicy" remote="unlegacy" groups="pdk" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="Unlegacy-Android/android_system_core" remote="unlegacy" groups="pdk" />
+  <project path="external/stlport" name="Unlegacy-Android/android_external_stlport" remote="unlegacy" groups="pdk" />
+
+  <!-- Bring in Google GCC 4.7 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.7" revision="master" groups="pdk,linux,arm" />
+
+  <!-- Switch to the master branch Google GCC 4.9 -->
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="master" groups="pdk,linux,arm" />
+
+  <!-- Debloat -->
+  <remove-project name="device/asus/fugu" />
+  <remove-project name="device/asus/fugu-kernel" />
+  <remove-project name="device/google/dragon" />
+  <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
+  <remove-project name="device/huawei/angler" />
+  <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/intel/edison" />
+  <remove-project name="device/lge/bullhead" />
+  <remove-project name="device/lge/bullhead-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="platform/packages/apps/Browser2" />
+  <remove-project name="platform/packages/apps/Music" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+
+</manifest>

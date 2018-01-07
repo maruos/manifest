@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- AOSP base manifest -->
-  <include name="aosp.xml" />
+  <!-- Remotes -->
+  <remote  name="unlegacy"
+           fetch="https://github.com/"
+           review="gerrit.unlegacy-android.org"
+           revision="aosp-7.1" />
+
+  <remote  name="android-security"
+           fetch="https://github.com/android-security/"
+           revision="aosp-7.1" />
 
   <remote  name="maruos"
            fetch="https://github.com/maruos"
            revision="nougat-mr2-release" />
+  
+  <!-- Includes -->
+  <include name="aosp.xml" />
+  <include name="unlegacy/unlegacy.xml" />
+  <include name="unlegacy/vendor.xml" />
 
-  <remote  name="github"
-           fetch="https://github.com"/>
+  <!-- Include Devices -->
+  <include name="unlegacy/devices/qcom.xml" />
 
-  <remove-project path="build" name="platform/build" />
-  <project path="build" name="android_platform_build" groups="pdk,tradefed" remote="maruos" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
+  <!-- Security Updates -->
+  <include name="unlegacy/android-security.xml" />
 
   <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
-  <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" revision="hammerhead-3.4-nougat-mr2" clone-depth="1"/>
-  <project path="kernel/flo" name="android_kernel_flo" groups="flo" remote="maruos" revision="master" clone-depth="1"/>
-  <project path="kernel/bullhead" name="android_kernel_bullhead" groups="bullhead" remote="maruos" revision="bullhead-3.10-nougat-mr2" clone-depth="1"/>
-
-  <project path="device/asus/flo" name="android_device_asus_flo" remote="maruos" revision="master" groups="device,flo" />
-  <project path="device/asus/flo-kernel" name="android_device_asus_flo-kernel" remote="maruos" revision="master" groups="device,flo" clone-depth="1" />
-  <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" revision="n-iot-preview-2" />
-
-  <project path="external/lxc" name="platform_external_lxc" remote="maruos" revision="master" />
-
-  <remove-project path="frameworks/base" name="platform/frameworks/base" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
-  <remove-project path="frameworks/native" name="platform/frameworks/native" />
-  <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
-  <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" />
-  <project path="hardware/qcom/display" name="android_platform_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="maruos" />
-
-  <project path="hardware/qcom/msm8x74" name="platform/hardware/qcom/msm8x74" groups="pdk,qcom_msm8x74" revision="n-iot-preview-2" />
-
-  <remove-project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
-
-  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
 </manifest>
