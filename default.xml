@@ -3,12 +3,12 @@
 
   <!-- Base manifest -->
   <include name="lineage/default.xml" />
+  <include name="snippets/overrides.xml" />
 
   <remote  name="maruos"
            fetch="https://github.com/maruos"
            revision="maru-0.6" />
 
-  <remove-project path="build/make" name="LineageOS/android_build" />
   <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
@@ -19,33 +19,23 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
+  <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
+  <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
+  <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
+  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
+  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
+  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
+
   <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
+  <!-- Devices -->
   <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="1"/>
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" />
 
   <project path="kernel/bullhead" name="android_kernel_bullhead" groups="device,bullhead" remote="maruos" clone-depth="1" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="maruos" />
 
-  <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
-
-  <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
-  <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
-  <remove-project path="frameworks/native" name="LineageOS/android_frameworks_native" />
-  <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
-
-  <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
-  <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
-
-  <!-- Maru uses the AOSP Launcher3 app instead of Trebuchet -->
-  <remove-project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" />
-  <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
-
-  <!-- Maru uses the AOSP Provision app instead of SetupWizard -->
-  <remove-project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
-
-  <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
 </manifest>
