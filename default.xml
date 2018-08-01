@@ -27,6 +27,9 @@
   <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="1"/>
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" />
 
+  <project path="kernel/bullhead" name="android_kernel_bullhead" groups="device,bullhead" remote="maruos" clone-depth="1" />
+  <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="maruos" />
+
   <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
 
   <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
