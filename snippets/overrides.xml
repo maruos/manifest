@@ -13,7 +13,7 @@
   <!-- Provision -->
   <remove-project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
 
-  <!-- Extraneous overrides -->
+  <!-- Remove unneeded projects -->
   <remove-project path="lineage/ansible" name="LineageOS/ansible" />
   <remove-project path="lineage/charter" name="LineageOS/charter" />
   <remove-project path="lineage/crowdin" name="LineageOS/cm_crowdin" />
@@ -24,4 +24,13 @@
   <remove-project path="lineage/website" name="LineageOS/www" />
   <remove-project path="lineage/wiki" name="LineageOS/lineage_wiki" />
 
+  <!-- Remove notdefault projects that mess up repo diffmanifests -->
+  <remove-project path="external/adt-infra" name="platform/external/adt-infra" />
+  <remove-project path="tools/adt/idea" name="platform/tools/adt/idea" />
+  <remove-project path="tools/base" name="platform/tools/base" />
+  <remove-project path="tools/build" name="platform/tools/build" />
+  <remove-project path="tools/idea" name="platform/tools/idea" />
+  <remove-project path="tools/motodev" name="platform/tools/motodev" />
+  <remove-project path="tools/studio/cloud" name="platform/tools/studio/cloud" />
+  <remove-project path="tools/swt" name="platform/tools/swt" />
 </manifest>
