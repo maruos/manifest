@@ -39,4 +39,9 @@
   <project path="kernel/bullhead" name="android_kernel_bullhead" groups="device,bullhead" remote="maruos" clone-depth="1" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="maruos" />
 
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" groups="device,star2lte,pdk" />
+  <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" groups="device,star2lte" remote="maruos" clone-depth="1" />
+  <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" />
+  <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="maruos" />
+
 </manifest>
