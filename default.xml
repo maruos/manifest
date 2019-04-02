@@ -39,6 +39,9 @@
   <project path="kernel/bullhead" name="android_kernel_bullhead" groups="device,bullhead" remote="maruos" clone-depth="100" />
   <project path="device/lge/bullhead" name="android_device_lge_bullhead" groups="device,bullhead,pdk" remote="maruos" />
 
+  <project path="kernel/huawei/angler" name="android_kernel_huawei_angler" groups="device,angler" remote="maruos" clone-depth="100" />
+  <project path="device/huawei/angler" name="android_device_huawei_angler" groups="device,angler,pdk" remote="maruos" />
+
   <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" groups="device,star2lte,pdk" />
   <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" groups="device,star2lte" remote="maruos" clone-depth="100" />
   <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" />
