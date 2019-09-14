@@ -46,5 +46,7 @@
   <project path="kernel/samsung/universal9810" name="android_kernel_samsung_universal9810" groups="device,star2lte" remote="maruos" clone-depth="100" />
   <project path="device/samsung/universal9810-common" name="android_device_samsung_universal9810-common" groups="device,star2lte,pdk" remote="maruos" />
   <project path="device/samsung/star2lte" name="android_device_samsung_star2lte" groups="device,star2lte,pdk" remote="maruos" />
+  <project path="kernel/google/marlin" name="android_kernel_google_marlin" groups="device,marlin,sailfish" remote="maruos" clone-depth="100" />
+  <project path="device/google/marlin" name="android_device_google_marlin" groups="device,marlin,sailfish,pdk" remote="maruos" />
 
 </manifest>
