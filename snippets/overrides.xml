@@ -13,17 +13,6 @@
   <!-- Provision -->
   <remove-project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
 
-  <!-- Remove unneeded projects -->
-  <remove-project path="lineage/ansible" name="LineageOS/ansible" />
-  <remove-project path="lineage/charter" name="LineageOS/charter" />
-  <remove-project path="lineage/crowdin" name="LineageOS/cm_crowdin" />
-  <remove-project path="lineage/cve" name="LineageOS/cve_tracker" />
-  <remove-project path="lineage/jenkins" name="LineageOS/hudson" />
-  <remove-project path="lineage/mirror" name="LineageOS/mirror" />
-  <remove-project path="lineage/slackbot" name="LineageOS/slackbot" />
-  <remove-project path="lineage/website" name="LineageOS/www" />
-  <remove-project path="lineage/wiki" name="LineageOS/lineage_wiki" />
-
   <!-- Remove notdefault projects that mess up repo diffmanifests -->
   <remove-project path="external/adt-infra" name="platform/external/adt-infra" />
   <remove-project path="tools/adt/idea" name="platform/tools/adt/idea" />
