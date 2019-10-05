@@ -25,4 +25,13 @@
   <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="100"/>
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" />
 
+  <project path="device/htc/pme" name="android_device_htc_pme" groups="device,pme" remote="maruos" />
+  <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" groups="device,pme" remote="maruos" clone-depth="100" />
+  <project path="device/qcom/common" name="LineageOS/android_device_qcom_common" groups="device,pme" />
+  <project path="vendor/nxp-nfc/opensource/frameworks" name="LineageOS/android_vendor_nxp-nfc_opensource_frameworks" groups="device,pme" />
+  <project path="vendor/nxp-nfc/opensource/libnfc-nci" name="LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci" groups="device,pme" />
+  <project path="vendor/nxp-nfc/opensource/Nfc" name="LineageOS/android_vendor_nxp-nfc_opensource_Nfc" groups="device,pme" />
+  <project path="packages/apps/FlipFlap" name="LineageOS/android_packages_apps_FlipFlap" groups="device,pme" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" groups="device,pme" />
+
 </manifest>
