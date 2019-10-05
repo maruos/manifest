@@ -7,7 +7,7 @@
 
   <remote  name="maruos"
            fetch="https://github.com/maruos"
-           revision="cm-14.1" />
+           revision="maru-0.5" />
 
   <project path="external/lxc" name="platform_external_lxc" remote="maruos" revision="master" />
   <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
