@@ -7,7 +7,7 @@
 
   <remote  name="maruos"
            fetch="https://github.com/maruos"
-           revision="maru-0.6" />
+           revision="maru-0.7" />
 
   <project path="build/make" name="android_platform_build" remote="maruos" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
