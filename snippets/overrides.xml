@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Maru overrides -->
+  <remove-project path="build/make" name="LineageOS/android_build" />
+  <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
+  <remove-project path="frameworks/native" name="LineageOS/android_frameworks_native" />
+  <remove-project path="packages/apps/LineageParts" name="LineageOS/android_packages_apps_LineageParts" />
+  <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
+
+  <!-- AOSP overrides -->
+  <!-- Launcher3 -->
+  <remove-project path="packages/apps/Trebuchet" name="LineageOS/android_packages_apps_Trebuchet" />
+  <!-- Provision -->
+  <remove-project path="packages/apps/SetupWizard" name="LineageOS/android_packages_apps_SetupWizard" />
+
+  <!-- Remove unneeded projects -->
+  <remove-project path="lineage/ansible" name="LineageOS/ansible" />
+  <remove-project path="lineage/charter" name="LineageOS/charter" />
+  <remove-project path="lineage/crowdin" name="LineageOS/cm_crowdin" />
+  <remove-project path="lineage/cve" name="LineageOS/cve_tracker" />
+  <remove-project path="lineage/jenkins" name="LineageOS/hudson" />
+  <remove-project path="lineage/mirror" name="LineageOS/mirror" />
+  <remove-project path="lineage/slackbot" name="LineageOS/slackbot" />
+  <remove-project path="lineage/website" name="LineageOS/www" />
+  <remove-project path="lineage/wiki" name="LineageOS/lineage_wiki" />
+
+  <!-- Remove notdefault projects that mess up repo diffmanifests -->
+  <remove-project path="external/adt-infra" name="platform/external/adt-infra" />
+  <remove-project path="tools/adt/idea" name="platform/tools/adt/idea" />
+  <remove-project path="tools/base" name="platform/tools/base" />
+  <remove-project path="tools/build" name="platform/tools/build" />
+  <remove-project path="tools/idea" name="platform/tools/idea" />
+  <remove-project path="tools/motodev" name="platform/tools/motodev" />
+  <remove-project path="tools/studio/cloud" name="platform/tools/studio/cloud" />
+  <remove-project path="tools/swt" name="platform/tools/swt" />
+</manifest>
