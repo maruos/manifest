@@ -19,27 +19,19 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
 
-  <!--
   <project path="external/lxc" name="platform_external_lxc" remote="maruos" />
-  -->
   <project path="frameworks/base" name="android_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="maruos" />
   <project path="frameworks/native" name="android_platform_frameworks_native" groups="pdk" remote="maruos" />
   <project path="packages/apps/Settings" name="android_platform_packages_apps_Settings" remote="maruos" />
-  <!--
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" groups="pdk-fs" remote="aosp" />
-  -->
   <project path="packages/apps/LineageParts" name="android_packages_apps_LineageParts" remote="maruos" />
-  <!--
   <project path="prebuilts/busybox" name="platform_prebuilts_busybox" remote="maruos" revision="master" />
-  -->
 
 
-  <!--
   <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
   <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
-  -->
 
   <!-- Devices -->
   <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="100"/>
