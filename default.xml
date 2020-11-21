@@ -29,7 +29,7 @@
 
 
   <project path="vendor/maruos" name="vendor_maruos" remote="maruos" />
-  <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" revision="master" />
+  <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
