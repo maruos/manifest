@@ -34,7 +34,16 @@
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
 
   <!-- Devices -->
+
+  <!-- START hammerhead - Nexus 5 -->
   <project path="kernel/hammerhead" name="android_kernel_hammerhead" groups="hammerhead" remote="maruos" clone-depth="100"/>
   <project path="device/lge/hammerhead" name="android_device_lge_hammerhead" groups="device,hammerhead,broadcom_pdk,generic_fs" remote="maruos" />
+  <!-- END hammerhead - nexus 5 -->
 
+  <!-- START pme - HTC 10 -->
+  <project path="device/htc/pme" name="android_device_htc_pme" remote="pintaf" />
+  <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" remote="pintaf" />
+  <project path="vendor/htc" name="pintaf/proprietary_vendor_htc" remote="github" revision="lineage-16.0" />
+  <!-- END pme - HTC 10 -->
+  
 </manifest>
