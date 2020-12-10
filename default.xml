@@ -43,13 +43,11 @@
   <!-- START pme - HTC 10 -->
   <project path="device/htc/pme" name="android_device_htc_pme" remote="maruos" />
   <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" remote="maruos" />
-  <project path="vendor/htc" name="proprietary_vendor_htc" remote="maruos" revision="lineage-16.0" />
   <!-- END pme - HTC 10 -->
 
     <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
   <project path="device/google/marlin" name="android_device_google_marlin" remote="maruos" />
   <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="maruos" />
-  <project path="vendor/google" name="proprietary_vendor_google" remote="maruos" revision="lineage-16.0" />
   <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
 
 </manifest>
