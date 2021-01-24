@@ -31,6 +31,7 @@
   <project path="vendor/maruos/mflinger" name="mflinger" remote="maruos" />
   <project path="vendor/maruos/blueprints" name="blueprints" remote="maruos" revision="master" />
   <project path="vendor/maruos/installer" name="installer" remote="maruos" revision="master" />
+  <project path="vendor/maruos/packages/apps/MaruSettings" name="vendor_maruos_packages_apps_MaruSettings" remote="maruos" />
   
   <!-- Devices -->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-16.0" />
@@ -45,7 +46,7 @@
   <project path="kernel/htc/msm8996" name="android_kernel_htc_msm8996" remote="maruos" />
   <!-- END pme - HTC 10 -->
 
-    <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
+  <!-- START Sailfish/Marlin - Google Pixel / Google Pixel XL -->
   <project path="device/google/marlin" name="android_device_google_marlin" remote="maruos" />
   <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="maruos" />
   <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
