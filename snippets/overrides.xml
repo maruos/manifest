@@ -6,7 +6,6 @@
   <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" />
   <remove-project path="frameworks/native" name="LineageOS/android_frameworks_native" />
   <remove-project path="packages/apps/LineageParts" name="LineageOS/android_packages_apps_LineageParts" />
-  <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" />
 
   <!-- AOSP overrides -->
   <!-- Launcher3 -->
