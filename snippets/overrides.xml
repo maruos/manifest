@@ -18,7 +18,7 @@
   <remove-project path="lineage/charter" name="LineageOS/charter" />
   <remove-project path="lineage/crowdin" name="LineageOS/cm_crowdin" />
   <remove-project path="lineage/cve" name="LineageOS/cve_tracker" />
-  <remove-project path="lineage/jenkins" name="LineageOS/hudson" />
+  <remove-project path="lineage/hudson" name="LineageOS/hudson" />
   <remove-project path="lineage/mirror" name="LineageOS/mirror" />
   <remove-project path="lineage/slackbot" name="LineageOS/slackbot" />
   <remove-project path="lineage/website" name="LineageOS/www" />
