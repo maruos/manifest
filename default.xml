@@ -50,6 +50,12 @@
   <project path="kernel/google/marlin" name="android_kernel_google_marlin" remote="maruos" />
   <!-- END Sailfish/Marlin - Google Pixel / Google Pixel XL -->
 
+  <!-- START Wahoo/Taimen - Google Pixel 2XL -->
+  <project path="device/google/taimen" name="android_device_google_taimen" remote="maruos" />
+  <project path="device/google/wahoo" name="android_device_google_wahoo" remote="maruos" />
+  <project path="kernel/google/wahoo" name="android_kernel_google_wahoo" remote="maruos" />
+  <!-- END Wahoo/Taimen - Google Pixel 2XL -->
+
   <!-- START sargo/bonito - Google Pixel 3a / Google Pixel 3a XL -->
   <project path="device/google/bonito" name="android_device_google_bonito" remote="maruos" />
   <project path="kernel/google/bonito" name="android_kernel_google_bonito" remote="maruos" />
